@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online event registration</title>
+</head>
+<body>
+    <h1>Fill in your details to register</h1>
+    <!--full name  email phone no.  gender(radio button) age grp (dropdown) topic of interest(checkboxes) text area for additional comments-->
+    <form action="/register" method="post">
+        <label id="fullname">Full Name :</label><br>
+        <input type="text" id="fullname" name="fullname" required><br><br> 
+        <label id="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br> 
+        <label id="phone">Phone Number :</label><br>
+        <input type="number" id="phone" name="phone" required><br><br> 
+        <label id="Gender">Gender :</label><br>
+        <input type="radio" id="male" name="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="female" >
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="other">
+        <label for="Other">Other</label><br>
+        <input type="radio" id="nada" name="nada">
+        <label for="nada">Prefer not to say</label>
+        <br> <br>
+        <label for="age">Select your age group :</label><br>
+        <select id="age" name="age">
+        <option value="1-13">1-13</option>
+        <option value="14-18">14-18</option>
+        <option value="19-25">19-25</option>
+        <option value="25-40">25-40</option>
+        <option value="40+">40+</option>
+        </select>
+        <br><br>
+        <p>Select your interests : </p>
+        <input type="checkbox" id="singing" name="singing">
+        <label for="singing">Singing</label><br>
+        <input type="checkbox" id="baking" name="baking">
+        <label for="baking">Baking</label><br>
+        <input type="checkbox" id="Dancing" name="Dancing">
+        <label for="Dancing">Dancing</label><br><br>
+        <p><label for="comments">Add a comment (optional):</label></p>
+        <textarea id="comments" name="comment" rows="4" cols="50"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
