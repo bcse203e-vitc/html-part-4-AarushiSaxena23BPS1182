@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizable Form Template</title>
+</head>
+<body>
+
+    <h1>Customizable Form Template</h1>
+
+    <form action="#" method="POST">
+        <label for="formName">Form Name:</label><br>
+        <input type="text" id="formName" name="formName" required><br><br>
+
+        <label for="numFields">Number of Input Fields:</label><br>
+        <input type="number" id="numFields" name="numFields" required><br><br>
+
+        <label for="field1Label">Field 1 Label:</label><br>
+        <input type="text" id="field1Label" name="field1Label" placeholder="Enter field label"><br><br>
+
+        <label for="field1Type">Field 1 Type:</label><br>
+        <select id="field1Type" name="field1Type">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select><br><br>
+
+        <label for="field2Label">Field 2 Label:</label><br>
+        <input type="text" id="field2Label" name="field2Label" placeholder="Enter field label"><br><br>
+
+        <label for="field2Type">Field 2 Type:</label><br>
+        <select id="field2Type" name="field2Type">
+            <option value="text">Text</option>
+            <option value="email">Email</option>
+            <option value="number">Number</option>
+            <option value="date">Date</option>
+        </select><br><br>
+
+        <button type="submit">Create Form</button>
+    </form>
+
+</body>
+</html>
