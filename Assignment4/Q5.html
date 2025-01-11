@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+
+    <h1>Product Order Form</h1>
+
+    <form action="#" method="POST">
+        <label for="customerName">Customer Name:</label><br>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="product">Product:</label><br>
+        <select id="product" name="product" required>
+            <option value="prod">Product 1 - $10</option>
+            <option value="prod2">Product 2 - $20</option>
+            <option value="prod3">Product 3 - $30</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required><br><br>
+
+        <label for="deliveryPreferences">Delivery Preferences:</label><br>
+        <input type="radio" id="standard" name="deliveryPreferences" value="standard">
+        <label for="standard">Standard</label><br>
+        <input type="radio" id="express" name="deliveryPreferences" value="express">
+        <label for="express">Express</label><br><br>
+
+        <label for="coupon">Apply Coupon:</label><br>
+        <input type="text" id="coupon" name="coupon"><br><br>
+
+        <button type="submit">Submit Order</button><br><br>
+
+        <label for="totalPrice">Total Price:</label><br>
+        <input type="text" id="totalPrice" name="totalPrice" readonly><br><br>
+    </form>
+
+</body>
+</html>
